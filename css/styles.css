@@ -1,0 +1,101 @@
+:root {
+    --text-color: #222;
+    /* --text-color: #2b2b2b; */
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("https://rsms.me/inter/font-files/Inter-Bold.woff2?v=3.11") format("woff2"),
+         url("https://rsms.me/inter/font-files/Inter-Bold.woff?v=3.11") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=3.11") format("woff2"),
+         url("https://rsms.me/inter/font-files/Inter-SemiBold.woff?v=3.11") format("woff");
+}
+
+body {
+    background-color: #fbfbfb;
+    color: var(--text-color);
+    margin: 0.6em;
+}
+
+.content {
+    font-family: 'Inter-Bold', 'Arial', sans-serif;
+}
+
+.desc {
+    margin-bottom: 0.5em;
+}
+
+.links a, a:visited, a:hover, a:active {
+    display: inline-block;
+    font-family: 'Inter-SemiBold', 'Arial', sans-serif;
+    color: var(--text-color);
+    margin-right: 0.5em;
+    margin-bottom: 0.1em;
+    text-decoration: none;
+    border-bottom: 0.13em solid var(--text-color);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.footer img {
+    width: 4em;
+    height: 4em;
+}
+
+/* //////////////// MEDIA QUERIES ////////////////// */
+
+/* Extra small devices (portrait phones, less than 576px) */
+body {
+    font-size: 18px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        font-size: 23px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        font-size: 31px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        font-size: 40px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 48px;
+    }
+}
+
