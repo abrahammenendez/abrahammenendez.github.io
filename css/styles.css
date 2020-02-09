@@ -8,8 +8,8 @@
     font-style:  normal;
     font-weight: 700;
     font-display: swap;
-    src: url("https://rsms.me/inter/font-files/Inter-Bold.woff2?v=3.11") format("woff2"),
-         url("https://rsms.me/inter/font-files/Inter-Bold.woff?v=3.11") format("woff");
+    src: url("../res/fonts/Inter-Bold.woff2") format("woff2"),
+         url("../res/fonts/Inter-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -17,8 +17,8 @@
     font-style:  normal;
     font-weight: 600;
     font-display: swap;
-    src: url("https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=3.11") format("woff2"),
-         url("https://rsms.me/inter/font-files/Inter-SemiBold.woff?v=3.11") format("woff");
+    src: url("../res/fonts/Inter-SemiBold.woff2") format("woff2"),
+         url("../res/fonts/Inter-SemiBold.woff") format("woff");
 }
 
 body {
