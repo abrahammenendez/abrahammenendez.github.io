@@ -1,3 +1,3 @@
 **What is this?**
 
-My personal website! It's very simple because I like it that way :)
+My personal website! It's simple and beautiful because I like it that way :)
