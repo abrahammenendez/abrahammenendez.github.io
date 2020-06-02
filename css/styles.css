@@ -43,7 +43,8 @@ body.dark-mode {
   max-width: 42em;
   font-size: 1.05em;
   font-family: "Hoefler Text", "Garamond", "Times New Roman", serif;
-  margin: 0 25px 0 25px;
+  padding: 0 25px 0 25px;
+  margin: 0 auto;
 }
 
 .title {
