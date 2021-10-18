@@ -11,7 +11,7 @@
 
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Abraham Menéndez</title>
-    <meta name="description" content="Abraham Menéndez is a software developer from Asturias, Spain." />
+    <meta name="description" content="Abraham Menéndez is a software developer from Spain." />
     <meta name="author" content="Abraham Menéndez" />
 
     <!-- Browser/Mobile Specific Metas -->
@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://www.abrahammenendez.com" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Abraham Menéndez" />
-    <meta property="og:description" content="Abraham Menéndez is a software developer from Asturias, Spain." />
+    <meta property="og:description" content="Abraham Menéndez is a software developer from Spain." />
     <meta property="og:site_name" content="Abraham Menéndez" />
     <meta property="og:image" content="res/favicon.png" />
 
@@ -30,13 +30,13 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@whoisabraham" />
     <meta name="twitter:title" content="Abraham Menéndez" />
-    <meta name="twitter:description" content="Abraham Menéndez is a software developer from Asturias, Spain." />
+    <meta name="twitter:description" content="Abraham Menéndez is a software developer from Spain." />
     <meta name="twitter:creator" content="@whoisabraham" />
     <meta name="twitter:image:src" content="res/logo.png" />
 
     <!-- CSS -->
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/styles.css?10052020" rel="stylesheet" />
+    <link href="css/styles.css?18092021" rel="stylesheet" />
 
     <!-- JS -->
     <!-- None. -->
@@ -50,13 +50,13 @@
         <p class="title">Hi!<span id="modeChanger" class="modeChanger">🌑</span></p>
 
         <p>
-            I'm Abraham Menéndez, a 26-year-old software developer from Asturias, Spain.
+            I'm Abraham Menéndez, a 28-year-old software developer from Spain.
         </p>
 
         <p>
             If you are here, you probably already know that I love building software. These days I'm doing it at
             <a class="sngular" href="https://www.sngular.com/" target="_blank" rel="noopener noreferrer">Sngular</a>
-            as a Software Developer. Prior to joining them, I was a Lead Developer at
+            as a Team Lead. Prior to joining them, I was a Lead Developer at
             <a class="dominion" href="https://www.dominion-global.com/en/dominion-commercial" target="_blank"
                 rel="noopener noreferrer">Dominion Commercial</a>. You can check out my full work history
             <a class="linkedin" href="https://www.linkedin.com/in/abraham-menendez" target="_blank"
@@ -64,29 +64,30 @@
         </p>
 
         <p>
-            Another thing I love is learning. I'm always trying out cool new
+            Another thing I love is learning new stuff. I'm always trying out cool
             <a class="stack" href="https://stackshare.io/abraham" target="_blank"
                 rel="noopener noreferrer">frameworks/tools</a>
-            and taking new courses. In fact, since 2019, I've been keeping a
-            <a class="github" href="https://github.com/abrahammenendez/courses" target="_blank"
-                rel="noopener noreferrer">rated list</a>
-            of all the courses I've taken!
+            and taking new courses. 
         </p>
 
         <p>
-            I strongly believe in giving back, so I like to contribute to Open-source software and share what I know (<a
-                class="twitter" href="https://twitter.com/whoisabraham" target="_blank"
-                rel="noopener noreferrer">short-form</a>
-            and
-            <a class="medium" href="https://medium.com/@abrahammenendez" target="_blank"
-                rel="noopener noreferrer">long-form</a>).
+            I'm not really into social media (there are too many distractions nowadays), but I do have a (<a
+            class="twitter" href="https://twitter.com/whoisabraham" target="_blank"
+            rel="noopener noreferrer">Twitter</a> that I mostly use to retweet other people's opinions. If I want to share deeper thoughts, <a class="medium" href="https://medium.com/@abrahammenendez" target="_blank"
+            rel="noopener noreferrer">Medium</a>) is my platform of choice.
+        </p>        
+        
+        <p>
+            As I strongly believe in giving back, I'm trying to be a valuable Mentor at <a
+                class="oss" href="https://exercism.com/" target="_blank"
+                rel="noopener noreferrer">Exercism</a>, a not-for-profit organization that teaches programming.
         </p>
         
         <p>
             Although I don't have as much free time as I would like, I usually try to develop little
             <a class="github" href="https://github.com/abrahammenendez" target="_blank"
                 rel="noopener noreferrer">projects</a>
-            in my own time. Obviously, most of them end up in the graveyard of unfinished stuff. This year I think I
+            on my own time. Obviously, most of them end up in the graveyard of unfinished stuff. This year I think I
             will finally finish something worth talking about, so let's
             <a class="twitter" href="https://twitter.com/whoisabraham" target="_blank" rel="noopener noreferrer">keep in
                 touch</a>, OK?
@@ -94,12 +95,12 @@
 
         <p>
             See you around, <br />
-            <a class="goodbye" href="mailto:menendezabraham@gmail.com" target="_top">Abraham</a>
+            <a class="email" href="mailto:menendezabraham@gmail.com" target="_top">Abraham</a>
         </p>
     </div>
     <script>
 
-        const darkModeEnabled = localStorage.getItem('dark-mode') === 'enabled';
+        const darkModeEnabled = localStorage.getItem('dark-mode') === 'true';
         if (darkModeEnabled) {
             setDarkMode();
         }
@@ -118,10 +119,12 @@
         function setDarkMode() {
             body.classList = darkModeClass;
             modeChanger.innerHTML = "🌕";
+            localStorage.setItem('dark-mode', 'true');
         }
         function setLightMode() {
             body.classList = lightModeClass;
             modeChanger.innerHTML = "🌑";
+            localStorage.setItem('dark-mode', 'false');
         }            
     </script>
 </body>
