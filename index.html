@@ -99,15 +99,14 @@
         </p>
     </div>
     <script>
-
-        const darkModeEnabled = localStorage.getItem('dark-mode') === 'true';
-        if (darkModeEnabled) {
-            setDarkMode();
-        }
-        
         const lightModeClass = "light-mode";
         const darkModeClass = "dark-mode";
         const modeChanger = document.getElementById("modeChanger");
+
+        if (localStorage.getItem('dark-mode') === 'true') {
+            setDarkMode();
+        }
+                
         modeChanger.addEventListener("click", function () {
             if (document.body.classList[0] === lightModeClass) {
                 setDarkMode();
@@ -124,7 +123,7 @@
             document.body.classList = lightModeClass;
             modeChanger.innerHTML = "🌑";
             localStorage.setItem('dark-mode', 'false');
-        }            
+        }      
     </script>
 </body>
 
