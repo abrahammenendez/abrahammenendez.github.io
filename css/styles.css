@@ -77,7 +77,7 @@ a:visited {
 }
 
 .sngular {
-  color: #1d548f;
+  color: #00adc8;
 }
 
 .stack {
@@ -85,12 +85,11 @@ a:visited {
 }
 
 .dominion {
-  /* color: #00adc8; */
-  color: #de6037;;
+  color: #719fd1;
 }
 
 .linkedin {
-  color: #719fd1;
+  color: #de6037;
 }
 
 .github {
