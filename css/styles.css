@@ -97,7 +97,8 @@ a:visited {
 }
 
 .oss {
-  color: #b9b945;
+  /* color: #b9b945; */
+  color: #CC9900;
 }
 
 .email {
