@@ -107,22 +107,21 @@
         
         const lightModeClass = "light-mode";
         const darkModeClass = "dark-mode";
-        const body = document.body;
         const modeChanger = document.getElementById("modeChanger");
         modeChanger.addEventListener("click", function () {
-            if (body.classList[0] === lightModeClass) {
+            if (document.body.classList[0] === lightModeClass) {
                 setDarkMode();
             } else {
                 setLightMode();
             }
         });
         function setDarkMode() {
-            body.classList = darkModeClass;
+            document.body.classList = darkModeClass;
             modeChanger.innerHTML = "🌕";
             localStorage.setItem('dark-mode', 'true');
         }
         function setLightMode() {
-            body.classList = lightModeClass;
+            document.body.classList = lightModeClass;
             modeChanger.innerHTML = "🌑";
             localStorage.setItem('dark-mode', 'false');
         }            
