@@ -85,11 +85,12 @@ a:visited {
 }
 
 .dominion {
-  color: #00adc8;
+  /* color: #00adc8; */
+  color: #de6037;;
 }
 
 .linkedin {
-  color: #de6037;
+  color: #719fd1;
 }
 
 .github {
