@@ -1,3 +1,3 @@
 **What is this?**
 
-My simple and straightforward personal website! :)
+My personal website! Simple and beautiful.
