@@ -93,16 +93,12 @@
         const darkModeClass = "dark-mode";
         const modeChanger = document.getElementById("modeChanger");
 
-        if (localStorage.getItem('dark-mode') === 'true') {
-            setDarkMode();
+        if (localStorage.getItem('dark-mode') === 'false') {
+            setLightMode();
         }
         
         modeChanger.addEventListener("click", function () {
-            if (document.body.classList[0] === lightModeClass) {
-                setDarkMode();
-            } else {
-                setLightMode();
-            }
+            document.body.classList[0] === lightModeClass ? setDarkMode() : setLightMode();
         });
         function setDarkMode() {
             document.body.classList = darkModeClass;
