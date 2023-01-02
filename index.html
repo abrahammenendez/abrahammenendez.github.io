@@ -91,12 +91,12 @@
     <script>
         const lightModeClass = "light-mode";
         const darkModeClass = "dark-mode";
-        const modeChanger = document.getElementById("modeChanger");
 
         if (localStorage.getItem('dark-mode') === 'true') {
             setDarkMode();
         }
                 
+        const modeChanger = document.getElementById("modeChanger");
         modeChanger.addEventListener("click", function () {
             if (document.body.classList[0] === lightModeClass) {
                 setDarkMode();
