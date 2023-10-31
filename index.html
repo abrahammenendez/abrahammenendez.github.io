@@ -47,7 +47,7 @@
 
 <body class="dark-mode">
     <div id="wrapper">
-        <p class="title">Hi!<span id="modeChanger" class="modeChanger">🌕</span></p>
+        <p class="title">Hi!<span id="modeToggle" class="modeToggle">🌕</span></p>
 
         <p>
             I'm Abraham Menéndez, a 30-year-old Spanish software developer living in Amsterdam (Netherlands).
@@ -72,7 +72,7 @@
         <p>
             I'm not really into social media (there are too many distractions nowadays), but I do have a <a
             class="twitter" href="https://twitter.com/whoisabraham" target="_blank"
-            rel="noopener noreferrer">Twitter</a> that I mostly use to retweet other people's opinions. I'm exploring different platforms to share more in-depth thoughts, but I haven't found the right one yet.
+            rel="noopener noreferrer">Twitter</a> that I mostly use to read about engineering and retweet other people's opinions. I'm exploring different platforms to share more in-depth thoughts, but I haven't found the right one yet.
         </p>
         
         <p>
@@ -91,20 +91,23 @@
     <script>
         const lightModeClass = "light-mode";
         const darkModeClass = "dark-mode";
-        const modeChanger = document.getElementById("modeChanger");
+        const modeToggle = document.getElementById("modeToggle");
+        const lightModeToggled = localStorage.getItem('dark-mode') === 'false';
 
-        if (localStorage.getItem('dark-mode') === 'false') {
+        if (lightModeToggled) {
             setLightMode();
         }
         
         modeChanger.addEventListener("click", function () {
             document.body.classList[0] === lightModeClass ? setDarkMode() : setLightMode();
         });
+        
         function setDarkMode() {
             document.body.classList = darkModeClass;
             modeChanger.innerHTML = "🌕";
             localStorage.setItem('dark-mode', 'true');
         }
+
         function setLightMode() {
             document.body.classList = lightModeClass;
             modeChanger.innerHTML = "🌑";
