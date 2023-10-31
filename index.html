@@ -98,19 +98,19 @@
             setLightMode();
         }
         
-        modeChanger.addEventListener("click", function () {
+        modeToggle.addEventListener("click", function () {
             document.body.classList[0] === lightModeClass ? setDarkMode() : setLightMode();
         });
         
         function setDarkMode() {
             document.body.classList = darkModeClass;
-            modeChanger.innerHTML = "🌕";
+            modeToggle.innerHTML = "🌕";
             localStorage.setItem('dark-mode', 'true');
         }
 
         function setLightMode() {
             document.body.classList = lightModeClass;
-            modeChanger.innerHTML = "🌑";
+            modeToggle.innerHTML = "🌑";
             localStorage.setItem('dark-mode', 'false');
         }      
     </script>
