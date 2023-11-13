@@ -3,117 +3,153 @@
 <html lang="en">
 
 <head>
-    <!-- Google Analytics -->
-    <!-- None. -->
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8" />
 
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8" />
+  <!-- Use the title from a page's frontmatter if it has one -->
+  <title>Abraham Menéndez</title>
+  <meta name="description"
+    content="Abraham Menéndez is a Spanish software developer based in Amsterdam (Netherlands)." />
+  <meta name="author" content="Abraham Menéndez" />
+  <link rel="canonical" href="https://www.abrahammenendez.com">
 
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Abraham Menéndez</title>
-    <meta name="description" content="Abraham Menéndez is a Spanish software developer living in Amsterdam (Netherlands)." />
-    <meta name="author" content="Abraham Menéndez" />
+  <!-- Browser/Mobile Specific Metas -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Abraham Menéndez" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True" />
 
-    <!-- Browser/Mobile Specific Metas -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Open Graph Metas -->
+  <meta property="og:url" content="https://www.abrahammenendez.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abraham Menéndez" />
+  <meta property="og:description"
+    content="Abraham Menéndez is a Spanish software developer based in Amsterdam (Netherlands)." />
+  <meta property="og:site_name" content="Abraham Menéndez" />
+  <meta property="og:image" content="res/favicon.png" />
 
-    <!-- Open Graph Metas -->
-    <meta property="og:url" content="https://www.abrahammenendez.com" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Abraham Menéndez" />
-    <meta property="og:description" content="Abraham Menéndez is a Spanish software developer living in Amsterdam (Netherlands)." />
-    <meta property="og:site_name" content="Abraham Menéndez" />
-    <meta property="og:image" content="res/favicon.png" />
+  <!-- Twitter Card data  -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@whoisabraham" />
+  <meta name="twitter:title" content="Abraham Menéndez" />
+  <meta name="twitter:description"
+    content="Abraham Menéndez is a Spanish software developer based in Amsterdam (Netherlands)." />
+  <meta name="twitter:creator" content="@whoisabraham" />
+  <meta name="twitter:image:src" content="res/logo.png" />
 
-    <!-- Twitter Card data  -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@whoisabraham" />
-    <meta name="twitter:title" content="Abraham Menéndez" />
-    <meta name="twitter:description" content="Abraham Menéndez is a Spanish software developer living in Amsterdam (Netherlands)." />
-    <meta name="twitter:creator" content="@whoisabraham" />
-    <meta name="twitter:image:src" content="res/logo.png" />
+  <!-- CSS -->
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/styles.css?1672619215" rel="stylesheet" />
 
-    <!-- CSS -->
-    <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/styles.css?1672619215" rel="stylesheet" />
+  <!-- JS -->
+  <!-- None. -->
 
-    <!-- JS -->
-    <!-- None. -->
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="res/favicon.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="res/favicon.png" />
 </head>
 
+<!-- Google Analytics tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3RPZFS89TJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3RPZFS89TJ');
+</script>
+
 <body class="dark-mode">
-    <div id="wrapper">
-        <p class="title">Hi!<span id="modeToggle" class="modeToggle">🌕</span></p>
+  <div id="wrapper">
 
-        <p>
-            I'm Abraham Menéndez, a 30-year-old Spanish software developer living in Amsterdam (Netherlands).
-        </p>
-
-        <p>
-            If you are here, you probably already know that I love building software. These days I'm doing it at
-            <a class="email" href="https://gorillas.io/en" target="_blank" rel="noopener noreferrer">Gorillas</a>
-            as a Checkout Tech Lead. Prior to joining them, I was a Team Lead at
-            <a class="oss" href="https://www.sngular.com/" target="_blank"
-                rel="noopener noreferrer">Sngular</a>. You can check out my full work history
-            <a class="medium" href="https://www.linkedin.com/in/abraham-menendez" target="_blank"
-                rel="noopener noreferrer">here</a>.
-        </p>
-        
-        <p>
-            As I strongly believe in giving back, I'm also trying to be a valuable Mentor at <a
-                class="stack" href="https://exercism.com/" target="_blank"
-                rel="noopener noreferrer">Exercism</a>, a not-for-profit organization that teaches programming.
-        </p>        
-        
-        <p>
-            I'm not really into social media (there are too many distractions nowadays), but I do have a <a
-            class="twitter" href="https://twitter.com/whoisabraham" target="_blank"
-            rel="noopener noreferrer">Twitter</a> that I mostly use to read about engineering and retweet other people's opinions. I'm exploring different platforms to share more in-depth thoughts, but I haven't found the right one yet.
-        </p>
-        
-        <p>
-            Although I don't have as much free time as I would like, I usually try to develop
-            <a class="github" href="https://github.com/abrahammenendez" target="_blank"
-                rel="noopener noreferrer">little projects</a>
-            on my own time. Obviously, most of them end up in the graveyard of unfinished stuff. This year I think I
-            will finally finish something worth talking about, so let's keep in touch, OK?
-        </p>
-
-        <p>
-            See you around, <br />
-            <a class="sngular" href="mailto:menendezabraham@gmail.com" target="_top">Abraham</a>
-        </p>
+    <div id="header-container">
+      <span id="title">Hi!</span>
+      <header>
+        <nav>
+          <ul>
+            <!-- <li>
+              <a href="/">👨🏻</a>
+            </li>
+            <li>
+              <a href="/">📡</a> 
+            </li> -->
+            <li>
+              <span id="modeToggle">🌕</span>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    <script>
-        const lightModeClass = "light-mode";
-        const darkModeClass = "dark-mode";
-        const modeToggle = document.getElementById("modeToggle");
-        const lightModeToggled = localStorage.getItem('dark-mode') === 'false';
 
-        if (lightModeToggled) {
-            setLightMode();
-        }
-        
-        modeToggle.addEventListener("click", function () {
-            document.body.classList[0] === lightModeClass ? setDarkMode() : setLightMode();
-        });
-        
-        function setDarkMode() {
-            document.body.classList = darkModeClass;
-            modeToggle.innerHTML = "🌕";
-            localStorage.setItem('dark-mode', 'true');
-        }
+    <p>
+      I'm Abraham Menéndez, a 30-year-old Spanish software developer based in Amsterdam (Netherlands).
+    </p>
 
-        function setLightMode() {
-            document.body.classList = lightModeClass;
-            modeToggle.innerHTML = "🌑";
-            localStorage.setItem('dark-mode', 'false');
-        }      
-    </script>
+    <p>
+      If you are here, you probably already know that I love building software. These days I'm doing it at
+      <a class="current-job" href="https://gorillas.io/en" target="_blank" rel="noopener noreferrer">Gorillas</a>
+      as a Checkout Tech Lead. Prior to joining them, I was a Team Lead at
+      <a class="previous-job" href="https://www.sngular.com/" target="_blank" rel="noopener noreferrer">Sngular</a>. You
+      can
+      check out my full work history
+      <a class="job-history" href="https://www.linkedin.com/in/abraham-menendez" target="_blank"
+        rel="noopener noreferrer">here</a>.
+    </p>
+
+    <p>
+      As I strongly believe in giving back, I'm also trying to be a valuable Mentor at <a class="oss"
+        href="https://exercism.com/" target="_blank" rel="noopener noreferrer">Exercism</a>, a not-for-profit
+      organization that teaches programming.
+    </p>
+
+    <p>
+      I'm not really into social media (there are too many distractions nowadays), but I do have a <a
+        class="short-form-social" href="https://twitter.com/whoisabraham" target="_blank"
+        rel="noopener noreferrer">Twitter</a> that I mostly use
+      to retweet other people's thoughts. I'm exploring different platforms to share more
+      in-depth thoughts, but I haven't found the right one yet.
+    </p>
+
+    <p>
+      Although I don't have as much free time as I would like, I usually try to develop
+      <a class="repositories" href="https://github.com/abrahammenendez" target="_blank" rel="noopener noreferrer">little
+        projects</a>
+      on my own time. Obviously, most of them end up in the graveyard of unfinished stuff. This year I think I
+      will finally finish something worth talking about, so let's keep in touch, OK?
+    </p>
+
+    <p>
+      See you around, <br />
+      <a class="email" href="mailto:menendezabraham@gmail.com" target="_top">Abraham</a>
+    </p>
+  </div>
+  <script>
+    const lightModeClass = "light-mode";
+    const darkModeClass = "dark-mode";
+    const modeToggle = document.getElementById("modeToggle");
+    const lightModeToggled = localStorage.getItem('dark-mode') === 'false';
+
+    if (lightModeToggled) {
+      setLightMode();
+    }
+
+    modeToggle.addEventListener("click", function () {
+      document.body.classList[0] === lightModeClass ? setDarkMode() : setLightMode();
+    });
+
+    function setDarkMode() {
+      document.body.classList = darkModeClass;
+      modeToggle.innerHTML = "🌕";
+      localStorage.setItem('dark-mode', 'true');
+    }
+
+    function setLightMode() {
+      document.body.classList = lightModeClass;
+      modeToggle.innerHTML = "🌑";
+      localStorage.setItem('dark-mode', 'false');
+    }      
+  </script>
 </body>
 
 </html>
