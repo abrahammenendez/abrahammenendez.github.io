@@ -13,7 +13,7 @@
   font-family: "Inter-Bold";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
+  /* font-display: swap; */
   src: url("../res/fonts/Inter-Bold.woff2") format("woff2"),
     url("../res/fonts/Inter-Bold.woff") format("woff");
 }
@@ -21,7 +21,7 @@
 @font-face {
   font-family: "Garamond";
   font-style: normal;
-  font-display: swap;
+  /*font-display: swap; */
   src: url("../res/fonts/Eb-Garamond.woff2") format("woff2"),
     url("../res/fonts/Eb-Garamond.woff") format("woff");
 }
@@ -29,7 +29,7 @@
 @font-face {
   font-family: "Hoefler Text";
   font-style: normal;
-  font-display: swap;
+  /*font-display: swap; */
   src: url("../res/fonts/Hoefler Text.ttf") format("truetype");
 }
 
@@ -45,7 +45,7 @@ body.dark-mode {
   color: var(--dark-mode-text);
 }
 
-#wrapper {
+#app {
   max-width: 42em;
   font-size: 1.05em;
   font-family: "Hoefler Text", "Garamond", "Times New Roman", serif;
