@@ -57,6 +57,7 @@ body.dark-mode {
 
 #header-container {
   margin-top: 25px;
+  margin-bottom: 26px;
   display: flex;
   justify-content: space-between;
   align-self: flex-start;
