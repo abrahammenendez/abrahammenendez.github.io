@@ -128,30 +128,34 @@
     </main>
   </div>
   <script>
-    const lightModeClass = "light-mode";
-    const darkModeClass = "dark-mode";
-    const modeToggle = document.getElementById("modeToggle");
-    const lightModeToggled = localStorage.getItem('dark-mode') === 'false';
+		const lightModeClass = 'light-mode';
+		const darkModeClass = 'dark-mode';
+		const darkModeStorage = 'dark-mode'; // Separate variable improves decoupling.
+		const modeToggle = document.getElementById('modeToggle');
 
-    if (lightModeToggled) {
-      setLightMode();
-    }
+		function isLightModeToggled() {
+			return document.body.classList.contains(lightModeClass);
+		}
 
-    modeToggle.addEventListener("click", function () {
-      document.body.classList[0] === lightModeClass ? setDarkMode() : setLightMode();
-    });
+		function setDarkMode() {
+			document.body.classList = darkModeClass;
+			modeToggle.innerHTML = '🌕';
+			localStorage.setItem(darkModeStorage, 'true');
+		}
 
-    function setDarkMode() {
-      document.body.classList = darkModeClass;
-      modeToggle.innerHTML = "🌕";
-      localStorage.setItem('dark-mode', 'true');
-    }
+		function setLightMode() {
+			document.body.classList = lightModeClass;
+			modeToggle.innerHTML = '🌑';
+			localStorage.setItem(darkModeStorage, 'false');
+		}
 
-    function setLightMode() {
-      document.body.classList = lightModeClass;
-      modeToggle.innerHTML = "🌑";
-      localStorage.setItem('dark-mode', 'false');
-    }      
+		modeToggle.addEventListener('click', function () {
+			isLightModeToggled() ? setDarkMode() : setLightMode();
+		});
+
+		if (isLightModeToggled()) {
+			setLightMode();
+		}
   </script>
 </body>
 
