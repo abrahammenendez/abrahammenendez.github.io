@@ -1,3 +1,3 @@
 **What is this?**
 
-My personal website!
+My personal website! Clean and easy to update.
