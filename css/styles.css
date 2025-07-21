@@ -1,9 +1,9 @@
 /* //////////////// VARIABLES ////////////////// */
 :root {
-  --light-mode-text: hsl(0, 0%, 10%);
-  --light-mode-back: hsl(0, 0%, 99.5%);
-  --dark-mode-text: hsl(0, 0%, 95%);
-  --dark-mode-back: hsl(0, 0%, 14.5%);
+  --light-scheme-text: hsl(0, 0%, 10%);
+  --light-scheme-bg: hsl(0, 0%, 99.5%);
+  --dark-scheme-text: hsl(0, 0%, 95%);
+  --dark-scheme-bg: hsl(0, 0%, 14.5%);
 }
 
 /* //////////////// FONTS ////////////////// */
@@ -30,13 +30,13 @@
 }
 
 /* //////////////// BODY ////////////////// */
-body.light-mode {
-  background-color: var(--light-mode-back);
-  color: var(--light-mode-text);
+body.light-scheme {
+  background-color: var(--light-scheme-bg);
+  color: var(--light-scheme-text);
 }
-body.dark-mode {
-  background-color: var(--dark-mode-back);
-  color: var(--dark-mode-text);
+body.dark-scheme {
+  background-color: var(--dark-scheme-bg);
+  color: var(--dark-scheme-text);
 }
 #app {
   max-width: 42em;
@@ -75,12 +75,12 @@ nav ul li {
   cursor: pointer;
 }
 
-/* //////////////// MODE TOGGLE EMOJI ////////////////// */
-#modeToggle::before {
+/* //////////////// SCHEME SWITCH EMOJI ////////////////// */
+#colorSchemeToggle::before {
   content: "🌕"; /* Default dark mode emoji */
 }
 
-.light-mode #modeToggle::before {
+.light-scheme #colorSchemeToggle::before {
   content: "🌑"; /* Light mode emoji */
 }
 
