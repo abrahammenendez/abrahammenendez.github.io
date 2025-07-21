@@ -135,15 +135,31 @@
   </div>
   <script>
     const colorSchemeQuery = '(prefers-color-scheme: dark)';
+    const colorSchemeToggle = document.getElementById('colorSchemeToggle');
+    const lightColorScheme = 'light-scheme';
+    const darkColorScheme = 'dark-scheme';
+    const colorSchemeItem = 'userColorSchemePreference';
 
     function updateColorScheme() {
-      const prefersDark = window.matchMedia(colorSchemeQuery).matches;
-      document.body.className = prefersDark ? 'dark-scheme' : 'light-scheme';
+      const storedPreference = localStorage.getItem(colorSchemeItem);
+      if (storedPreference) {
+        document.body.className = storedPreference;
+      } else {
+        const prefersDark = window.matchMedia(colorSchemeQuery).matches;
+        document.body.className = prefersDark ? darkColorScheme : lightColorScheme;
+      }
     }
 
     updateColorScheme();
 
     window.matchMedia(colorSchemeQuery).addEventListener('change', updateColorScheme);
+
+    colorSchemeToggle.addEventListener('click', () => {
+      const isDark = document.body.classList.contains(darkColorScheme);
+      const newScheme = isDark ? lightColorScheme : darkColorScheme;
+      document.body.className = newScheme;
+      localStorage.setItem(colorSchemeItem, newScheme);
+    });
   </script>
 </body>
 
