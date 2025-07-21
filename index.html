@@ -61,7 +61,7 @@
   gtag('config', 'G-3RPZFS89TJ');
 </script>
 
-<body class="dark-mode">
+<body class="dark-scheme">
   <div id="app">
 
     <div id="header-container">
@@ -70,7 +70,7 @@
         <nav>
           <ul>
             <li>
-              <span id="modeToggle"></span>
+              <span id="colorSchemeToggle"></span>
             </li>
           </ul>
         </nav>
@@ -83,7 +83,7 @@
       </p>
 
       <p>
-        If you have found your way here, you probably already know that I love building software. These days I'm doing
+        If you've found your way here, you probably already know that I love building software. These days I'm doing
         it at
         <a class="current-job" href="https://www.maersk.com/" target="_blank" rel="noopener noreferrer">Maersk</a>
         as a Freelance Backend Engineer. Prior to joining them, I was a Tech Lead at
@@ -97,7 +97,7 @@
       </p>
 
       <p>
-        I´m also a proud small investor in <a class="investment-1" href="https://gumroad.com/" target="_blank"
+        I'm also a proud small investor in <a class="investment-1" href="https://gumroad.com/" target="_blank"
           rel="noopener noreferrer">Gumroad</a>,
         an e-commerce platform that makes it incredibly easy for creators to get paid for their work. Feel free to check
         it out if it piques your interest!
@@ -105,13 +105,13 @@
 
 
       <p>
-        As I strongly believe in giving back, you can find me trying to be a valuable Mentor at <a class="oss"
+        As I strongly believe in giving back, you can find me trying to be a helpful Mentor at <a class="oss"
           href="https://exercism.com/" target="_blank" rel="noopener noreferrer">Exercism</a>, a not-for-profit
         organization dedicated to teaching programming to anyone eager to learn.
       </p>
 
       <p>
-        Social media isn't really my thing (too many distractions nowadays), but I do have a <a
+        Social media isn't really my thing (too many distractions these days), but I do have a <a
           class="short-form-social" href="https://twitter.com/whoisabraham" target="_blank"
           rel="noopener noreferrer">Twitter</a> that I mainly use
         to retweet other people's opinions. I'm exploring different platforms to share more
@@ -123,8 +123,7 @@
         <a class="repositories" href="https://github.com/abrahammenendez" target="_blank"
           rel="noopener noreferrer">small
           projects</a>
-        whenever I can. Obviously, most of them end up in the graveyard of unfinished stuff. This year I
-        plan to finish something worth talking about, so let's keep in touch, OK?
+        whenever I can. Obviously, most of them end up in the graveyard of unfinished stuff. This year I'm planning to finish something worth talking about, so let's keep in touch, OK?
       </p>
 
       <p>
@@ -136,14 +135,14 @@
   <script>
     const colorSchemeQuery = '(prefers-color-scheme: dark)';
 
-    function updateMode() {
+    function updateColorScheme() {
       const prefersDark = window.matchMedia(colorSchemeQuery).matches;
-      document.body.className = prefersDark ? 'dark-mode' : 'light-mode';
+      document.body.className = prefersDark ? 'dark-scheme' : 'light-scheme';
     }
 
-    updateMode();
+    updateColorScheme();
 
-    window.matchMedia(colorSchemeQuery).addEventListener('change', updateMode);
+    window.matchMedia(colorSchemeQuery).addEventListener('change', updateColorScheme);
   </script>
 </body>
 
