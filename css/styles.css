@@ -1,5 +1,4 @@
 /* //////////////// VARIABLES ////////////////// */
-
 :root {
   --light-mode-text: hsl(0, 0%, 10%);
   --light-mode-back: hsl(0, 0%, 99.5%);
@@ -8,7 +7,6 @@
 }
 
 /* //////////////// FONTS ////////////////// */
-
 @font-face {
   font-family: "Inter-Bold";
   font-style: normal;
@@ -17,7 +15,6 @@
   src: url("../res/fonts/Inter-Bold.woff2") format("woff2"),
     url("../res/fonts/Inter-Bold.woff") format("woff");
 }
-
 @font-face {
   font-family: "Garamond";
   font-style: normal;
@@ -25,7 +22,6 @@
   src: url("../res/fonts/Eb-Garamond.woff2") format("woff2"),
     url("../res/fonts/Eb-Garamond.woff") format("woff");
 }
-
 @font-face {
   font-family: "Hoefler Text";
   font-style: normal;
@@ -34,17 +30,14 @@
 }
 
 /* //////////////// BODY ////////////////// */
-
 body.light-mode {
   background-color: var(--light-mode-back);
   color: var(--light-mode-text);
 }
-
 body.dark-mode {
   background-color: var(--dark-mode-back);
   color: var(--dark-mode-text);
 }
-
 #app {
   max-width: 42em;
   font-size: 1.05em;
@@ -54,7 +47,6 @@ body.dark-mode {
 }
 
 /* //////////////// HEADER, NAV ////////////////// */
-
 #header-container {
   margin-top: 25px;
   margin-bottom: 26px;
@@ -64,15 +56,12 @@ body.dark-mode {
   font-family: "Inter-Bold", "Arial", sans-serif;
   font-size: 1.5em;
 }
-
 #title {
   align-self: flex-start;
 }
-
 header {
   align-self: flex-end;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -81,20 +70,26 @@ nav ul {
   margin-top: 0;
   margin-bottom: 0px;
 }
-
 nav ul li {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* //////////////// LINKS ////////////////// */
+/* //////////////// MODE TOGGLE EMOJI ////////////////// */
+#modeToggle::before {
+  content: "🌕"; /* Default dark mode emoji */
+}
 
+.light-mode #modeToggle::before {
+  content: "🌑"; /* Light mode emoji */
+}
+
+/* //////////////// LINKS ////////////////// */
 a:link,
 a:visited {
   text-decoration: none;
   cursor: pointer;
 }
-
 a:hover {
   text-decoration: underline;
 }
@@ -102,98 +97,74 @@ a:hover {
 .current-job {
   color: #d32c3b;
 }
-
 .previous-job {
   color: #CC9900;
 }
-
 .job-history {
   color: #e95ea7;
 }
-
 .investment-1 {
   color: #28a745;
 }
-
 .oss {
   color: #fb6f51;
 }
-
 .short-form-social {
   color: #2e91fd;
 }
-
 .repositories {
   color: #8e47f9;
 }
-
 .email {
   color: #009688;
 }
-
 /* //////////////// ADDITIONAL COLORS ////////////////// */
-
 .dominion {
   color: #719fd1;
 }
-
 .color-1 {
   color: #de6037;
   /* Vivid orange */
 }
-
 .color-2 {
   color: #5DBCD2;
   /* Light blue */
 }
-
 .color-3 {
   color: #FFCB05;
   /* Bright yellow */
 }
-
 .color-4 {
   color: #7CBB77;
   /* Light green */
 }
-
 .color-5 {
   color: #FF75A0;
   /* Pink */
 }
-
 .color-6 {
   color: #4D4D4D;
   /* Gray */
 }
-
 .color-7 {
   color: #00adc8;
   /* Teal */
 }
-
 .color-8 {
   color: #D68E26;
   /* Gold */
 }
-
 .color-9 {
   color: #5323E8;
   /* Purple */
 }
-
 /* //////////////// MEDIA QUERIES ////////////////// */
-
 /* Extra small devices (portrait phones, less than 576px) */
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {}
-
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
