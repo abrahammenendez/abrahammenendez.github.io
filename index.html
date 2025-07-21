@@ -55,7 +55,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RPZFS89TJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() {dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-3RPZFS89TJ');
@@ -69,14 +69,8 @@
       <header>
         <nav>
           <ul>
-            <!-- <li>
-              <a href="/">👨🏻</a>
-            </li>
             <li>
-              <a href="/">📡</a> 
-            </li> -->
-            <li>
-              <span id="modeToggle">🌕</span>
+              <span id="modeToggle"></span>
             </li>
           </ul>
         </nav>
@@ -87,31 +81,35 @@
       <p>
         I'm Abraham Menéndez, a 31-year-old Spanish software developer based in Haarlem, Netherlands.
       </p>
-  
+
       <p>
-        If you have found your way here, you probably already know that I love building software. These days I'm doing it at
+        If you have found your way here, you probably already know that I love building software. These days I'm doing
+        it at
         <a class="current-job" href="https://www.maersk.com/" target="_blank" rel="noopener noreferrer">Maersk</a>
         as a Freelance Backend Engineer. Prior to joining them, I was a Tech Lead at
-        <a class="previous-job" href="https://techcrunch.com/2022/12/09/instant-grocery-app-getir-acquires-its-competitor-gorillas/" target="_blank" rel="noopener noreferrer">Gorillas/Getir</a>. You
+        <a class="previous-job"
+          href="https://techcrunch.com/2022/12/09/instant-grocery-app-getir-acquires-its-competitor-gorillas/"
+          target="_blank" rel="noopener noreferrer">Gorillas/Getir</a>. You
         can
         take a look at my full work history
         <a class="job-history" href="https://www.linkedin.com/in/abraham-menendez" target="_blank"
           rel="noopener noreferrer">here</a>.
       </p>
-  
+
       <p>
-	I´m also a proud small investor in  <a class="investment-1"
-          href="https://gumroad.com/" target="_blank" rel="noopener noreferrer">Gumroad</a>,
-	      an e-commerce platform that makes it incredibly easy for creators to get paid for their work. Feel free to check it out if it piques your interest!
+        I´m also a proud small investor in <a class="investment-1" href="https://gumroad.com/" target="_blank"
+          rel="noopener noreferrer">Gumroad</a>,
+        an e-commerce platform that makes it incredibly easy for creators to get paid for their work. Feel free to check
+        it out if it piques your interest!
       </p>
 
-	    
+
       <p>
         As I strongly believe in giving back, you can find me trying to be a valuable Mentor at <a class="oss"
           href="https://exercism.com/" target="_blank" rel="noopener noreferrer">Exercism</a>, a not-for-profit
         organization dedicated to teaching programming to anyone eager to learn.
       </p>
-  
+
       <p>
         Social media isn't really my thing (too many distractions nowadays), but I do have a <a
           class="short-form-social" href="https://twitter.com/whoisabraham" target="_blank"
@@ -119,15 +117,16 @@
         to retweet other people's opinions. I'm exploring different platforms to share more
         in-depth thoughts, but I haven't found the right one yet.
       </p>
-  
+
       <p>
-        Although I don't have as much spare time as I would like, I usually try to work on 
-        <a class="repositories" href="https://github.com/abrahammenendez" target="_blank" rel="noopener noreferrer">small
+        Although I don't have as much spare time as I would like, I usually try to work on
+        <a class="repositories" href="https://github.com/abrahammenendez" target="_blank"
+          rel="noopener noreferrer">small
           projects</a>
         whenever I can. Obviously, most of them end up in the graveyard of unfinished stuff. This year I
-       plan to finish something worth talking about, so let's keep in touch, OK?
+        plan to finish something worth talking about, so let's keep in touch, OK?
       </p>
-  
+
       <p>
         See you around, <br />
         <a class="email" href="mailto:menendezabraham@gmail.com" target="_top">Abraham</a>
@@ -135,31 +134,16 @@
     </main>
   </div>
   <script>
-	const lightModeClass = "light-mode";
-	const darkModeClass = "dark-mode";
-	const modeToggle = document.getElementById("modeToggle");
-	const darkModeStorage = 'dark-mode'; // Separate variable improves decoupling.
-	
-	const isLightModePreferredByUser = localStorage.getItem(darkModeStorage) === 'false';
-	if (isLightModePreferredByUser) {
-		setLightMode();
-	}
-	
-	modeToggle.addEventListener("click", function () {
-		document.body.classList.contains(lightModeClass) ? setDarkMode() : setLightMode();
-	});
-	
-	function setDarkMode() {
-		document.body.classList = darkModeClass;
-		modeToggle.innerHTML = "🌕";
-		localStorage.setItem(darkModeStorage, 'true');
-	}
-	
-	function setLightMode() {
-		document.body.classList = lightModeClass;
-		modeToggle.innerHTML = "🌑";
-		localStorage.setItem(darkModeStorage, 'false');
-	}
+    const colorSchemeQuery = '(prefers-color-scheme: dark)';
+
+    function updateMode() {
+      const prefersDark = window.matchMedia(colorSchemeQuery).matches;
+      document.body.className = prefersDark ? 'dark-mode' : 'light-mode';
+    }
+
+    updateMode();
+
+    window.matchMedia(colorSchemeQuery).addEventListener('change', updateMode);
   </script>
 </body>
 
